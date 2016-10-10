@@ -2,6 +2,9 @@ package qx.core;
 import haxe.extern.EitherType;
 import haxe.extern.Rest;
 
+/**
+ * This mixin offers the basic logging features offered by {@link qx.log.Logger}.
+ */
 @:native("qx.core.MLogging")
 extern interface MLogging {
 	

@@ -2,6 +2,10 @@ package qx.core;
 import haxe.extern.EitherType;
 import haxe.extern.Rest;
 
+/**
+ * This mixin offers the basic property features which include generic
+ * setter, getter and resetter.
+ */
 @:native("qx.core.MProperty")
 extern interface MProperty {
 	

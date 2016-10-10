@@ -155,23 +155,33 @@ extern class Object
     function _disposeMap(field: String): Void;
 	
 	/**
+	 * Get assert interface of this object.
+	 */
+	public var Assert(get, null): MAssert;
+	inline function get_Assert(): MAssert return cast(this);	
+	
+	/**
+	 * Get binding interface of this object.
+	 */
+	public var BindTo(get, null): MBindTo;
+	inline function get_BindTo(): MBindTo return cast(this);
+	
+	/**
 	 * Get event interface of this object.
 	 */
 	public var Event(get, null): MEvent;
 	inline function get_Event(): MEvent return cast(this);
-
-
+	
 	/**
 	 * Get logging interface of this object.
 	 */
 	public var Logging(get, null): MLogging;
 	inline function get_Logging(): MLogging return cast(this);
 	
-	
 	/**
 	 * Get property interface of this object.
 	 */
 	public var Property(get, null): MProperty;
-	inline function get_Property(): MProperty return cast(this);
+	inline function get_Property(): MProperty return cast(this);	
 
 }
