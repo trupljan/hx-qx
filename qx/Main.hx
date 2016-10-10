@@ -61,6 +61,7 @@ import qx.data.SingleValueBinding;
 import qx.data.MBinding;
 
 import qx.data.store.IStoreDelegate;
+import qx.data.store.Json;
 
 
 import qx.util.Base64;
