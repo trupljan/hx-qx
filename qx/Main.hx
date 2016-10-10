@@ -7,6 +7,7 @@ import haxe.extern.Rest;
 import qx.core.Aspect;
 import qx.core.BaseInit;
 import qx.core.Environment;
+import qx.core.GlobalError;
 import qx.core.Init;
 import qx.core.Assert;
 import qx.core.MAssert;
@@ -15,6 +16,7 @@ import qx.core.MEvent;
 import qx.core.MLogging;
 import qx.core.MProperty;
 import qx.core.Object;
+import qx.core.ObjectRegistry;
 
 import qx.event.type.Event;
 
