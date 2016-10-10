@@ -6,7 +6,9 @@ import haxe.extern.Rest;
 
 import qx.core.Aspect;
 import qx.core.BaseInit;
+import qx.core.Environment;
 import qx.core.Init;
+import qx.core.Assert;
 import qx.core.MAssert;
 import qx.core.MBindTo;
 import qx.core.MEvent;

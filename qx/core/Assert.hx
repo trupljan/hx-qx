@@ -1,17 +1,13 @@
 package qx.core;
 
 /**
- * This mixin includes all assertions from {@link qx.core.Assert} to conveniently
- * call assertions. It is included into {@link qx.core.Object} if debugging code
- * is enabled. It is further included into all unit tests
- * {@link qx.dev.unit.TestCase}.
- *
- * @require(qx.core.Assert)
+ * ...
+ * @author 
  */
-@:native("qx.core.MAssert")
-extern interface MAssert
+@:native("qx.core.BaseInit")
+extern class Assert
 {
-  /**
+ /**
    * Assert that the condition evaluates to <code>true</code>.
    *
    * @param condition {var} Condition to check for. Must evaluate to
