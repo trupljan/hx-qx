@@ -16,7 +16,7 @@ import qx.core.Object;
 
 import qx.event.type.Event;
 
-import qx.type.Array;
+import qx.type.QxArray;
 import qx.type.BaseArray;
 import qx.type.BaseError;
 import qx.type.BaseString;

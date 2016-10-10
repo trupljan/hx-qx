@@ -9,7 +9,7 @@ import haxe.extern.Rest;
  * <code>contains</code>.
  */
 @:native("qx.type.Array")
-extern class Array extends BaseArray
+extern class QxArray extends BaseArray
 {
   /**
    * Creates a new Array with the given length or the listed items.
@@ -44,7 +44,7 @@ extern class Array extends BaseArray
      * @param i {Integer} position where to insert the element into the arr
      * @return {Array} the array
      */
-    function insertAt(obj: Dynamic, i: Int): qx.type.Array;
+    function insertAt(obj: Dynamic, i: Int): qx.type.QxArray;
 
 
     /**
@@ -54,7 +54,7 @@ extern class Array extends BaseArray
      * @param obj2 {var} insert obj1 before this object
      * @return {Array} the array
      */
-    function insertBefore(obj: Dynamic, obj2: Dynamic): qx.type.Array;
+    function insertBefore(obj: Dynamic, obj2: Dynamic): qx.type.QxArray;
 
 
     /**
@@ -64,7 +64,7 @@ extern class Array extends BaseArray
      * @param obj2 {var} insert obj1 after this object
      * @return {Array} the array
      */
-    function insertAfter(obj: Dynamic, obj2: Dynamic): qx.type.Array;
+    function insertAfter(obj: Dynamic, obj2: Dynamic): qx.type.QxArray;
 
 
     /**
@@ -81,7 +81,7 @@ extern class Array extends BaseArray
      *
      * @return {Array} empty array
      */
-    function removeAll(): qx.type.Array;
+    function removeAll(): qx.type.QxArray;
 
 
     /**
@@ -91,7 +91,7 @@ extern class Array extends BaseArray
      * @return {Array} The modified array.
      * @throws {Error} if one of the arguments is not an array
      */
-    function append(arr: qx.type.BaseArray): qx.type.Array;
+    function append(arr: qx.type.BaseArray): qx.type.QxArray;
 
 
     /**
@@ -101,7 +101,7 @@ extern class Array extends BaseArray
      * @return {Array} The modified array.
      * @throws {Error} if one of the arguments is not an array
      */
-    function prepend(arr: qx.type.BaseArray): qx.type.Array;
+    function prepend(arr: qx.type.BaseArray): qx.type.QxArray;
 
 
     /**
