@@ -67,7 +67,7 @@ implements IApplication
      *
      * @return {String?null} message text on unloading the page
      */
-    function close(): Null<String>;
+    function close(): Null<std.String>;
 
 
     /**

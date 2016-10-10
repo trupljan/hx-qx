@@ -71,7 +71,7 @@ extern class Routing
 	public function new();
 	
 	/** Default path. */
-	var DEFAULT_PATH(default, null): String; // "/"
+	var DEFAULT_PATH(default, null): std.String; // "/"
 	
 	/**
      * Initialization method used to execute the get route for the currently set history path.
@@ -80,7 +80,7 @@ extern class Routing
      *
      * @param defaultPath {String?} Optional default path for initialization.
      */
-    function init(?defaultPath: String): Void;
+    function init(?defaultPath: std.String): Void;
 	
 	/**
      * Checks if path is valid and registered in channel "get" and then just returns it.
@@ -91,7 +91,7 @@ extern class Routing
      * @param defaultPath {String?} Optional default path.
      * @return {String} A valid path.
      */
-    function _getPathOrFallback(path: String, ?defaultPath: String): String;
+    function _getPathOrFallback(path: std.String, ?defaultPath: std.String): std.String;
 	
 	
 	/**
@@ -103,7 +103,7 @@ extern class Routing
      * @param scope {Object} The scope of the handler.
      * @return {String} Event listener ID
      */
-    function onGet(route: EitherType<String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): String;
+    function onGet(route: EitherType<std.String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): std.String;
 
 
     /**
@@ -114,7 +114,7 @@ extern class Routing
      * @param scope {Object} The scope of the handler.
      * @return {String} Event listener ID
      */
-    function on(route: EitherType<String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): String;
+    function on(route: EitherType<std.String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): std.String;
 
 
     /**
@@ -126,7 +126,7 @@ extern class Routing
      * @param scope {Object} The scope of the handler.
      * @return {String} Event listener ID
      */
-    function onPost(route: EitherType<String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): String;
+    function onPost(route: EitherType<std.String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): std.String;
 
 
     /**
@@ -138,7 +138,7 @@ extern class Routing
      * @param scope {Object} The scope of the handler
      * @return {String} Event listener ID
      */
-    function onPut(route: EitherType<String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): String;
+    function onPut(route: EitherType<std.String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): std.String;
 
 
     /**
@@ -150,7 +150,7 @@ extern class Routing
      * @param scope {Object} The scope of the handler
      * @return {String} Event listener ID
      */
-    function onDelete(route: EitherType<String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): String;
+    function onDelete(route: EitherType<std.String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): std.String;
 
 
     /**
@@ -162,7 +162,7 @@ extern class Routing
      * @param scope {Object} The scope of the handler
      * @return {String} Event listener ID
      */
-    function onAny(route: EitherType<String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): String;
+    function onAny(route: EitherType<std.String, js.RegExp>, handler: haxe.Constraints.Function, scope: Dynamic): std.String;
 
 
     /**
@@ -170,7 +170,7 @@ extern class Routing
      *
      * @param id {String} The id of the registered route
      */
-    function remove(id: String): Void;
+    function remove(id: std.String): Void;
 
     /**
      * Executes the get operation and informs all matching route handler.
@@ -180,7 +180,7 @@ extern class Routing
      * @param fromEvent {var} Determines whether this method was called from history
      *
      */
-    function _executeGet(path:String, customData:Dynamic, fromEvent: Dynamic): Void;
+    function _executeGet(path: std.String, customData:Dynamic, fromEvent: Dynamic): Void;
 
 
     /**
@@ -189,7 +189,7 @@ extern class Routing
      * @param path {String} The path to execute
      * @param customData {var} The given custom data that should be propagated
      */
-    function executeGet(path: String, customData:Dynamic): Void;
+    function executeGet(path: std.String, customData:Dynamic): Void;
 
 
     /**
@@ -198,7 +198,7 @@ extern class Routing
      * @param path {String} The path to execute
      * @param customData {var} The given custom data that should be propagated
      */
-    function execute(path: String, customData: Dynamic): Void;
+    function execute(path: std.String, customData: Dynamic): Void;
 
 
     /**
@@ -208,7 +208,7 @@ extern class Routing
      * @param params {Map} The given parameters that should be propagated
      * @param customData {var} The given custom data that should be propagated
      */
-    function executePost(path: String, params: Dynamic, customData: Dynamic): Void;
+    function executePost(path: std.String, params: Dynamic, customData: Dynamic): Void;
 
 
     /**
@@ -218,7 +218,7 @@ extern class Routing
      * @param params {Map} The given parameters that should be propagated
      * @param customData {var} The given custom data that should be propagated
      */
-    function executePut(path: String, params: Dynamic, customData: Dynamic): Void;
+    function executePut(path: std.String, params: Dynamic, customData: Dynamic): Void;
 
 
     /**
@@ -228,14 +228,14 @@ extern class Routing
      * @param params {Map} The given parameters that should be propagated
      * @param customData {var} The given custom data that should be propagated
      */
-    function executeDelete(path: String, params: Dynamic, customData: Dynamic): Void;
+    function executeDelete(path: std.String, params: Dynamic, customData: Dynamic): Void;
 
 
     /**
      * Returns state value (history hash) of the navigation handler.
      * @return {String} State of history navigation handler
      */
-    function getState(): String;
+    function getState(): std.String;
 
     /**
     * Navigates back to the previously executed path.
