@@ -63,6 +63,7 @@ import qx.data.MBinding;
 import qx.data.store.IStoreDelegate;
 import qx.data.store.Json;
 import qx.data.store.Jsonp;
+import qx.data.store.Offline;
 
 
 import qx.util.Base64;

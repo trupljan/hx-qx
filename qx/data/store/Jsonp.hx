@@ -32,6 +32,6 @@ extends qx.data.store.Json
     function setCallbackName(value: String): Void;
 
 
-    // overridden
+    /// overridden
     override function _createRequest(url: std.String): Void;    
 }
