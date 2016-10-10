@@ -56,6 +56,7 @@ import qx.locale.String;
 
 import qx.data.IListData;
 import qx.data.Array;
+import qx.data.Conversion;
 import qx.data.SingleValueBinding;
 import qx.data.MBinding;
 
