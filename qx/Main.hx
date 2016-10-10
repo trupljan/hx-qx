@@ -65,6 +65,7 @@ import qx.data.store.Json;
 import qx.data.store.Jsonp;
 import qx.data.store.Offline;
 import qx.data.store.Rest;
+import qx.data.store.Yql;
 
 
 import qx.util.Base64;
