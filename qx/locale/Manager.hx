@@ -16,8 +16,13 @@ import haxe.extern.Rest;
 extern class Manager
 extends qx.core.Object
 {
+	
+	/** Singleton */
+	public function getInstance(): qx.locale.Manager;
+	
 	/** Construct. */
-	public function new();
+	//public function new();
+	
 	
 	/** current locale. locale is an language code like de, de_AT, en, en_GB, fr, ... */
 	public var locale(get, set): String;

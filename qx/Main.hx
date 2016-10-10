@@ -46,9 +46,13 @@ import qx.ui.mobile.core.Widget;
 import qx.ui.root.Application;
 import qx.ui.root.Page;
 
-import qx.locale.MTranslation;
+import qx.locale.Date;
+import qx.locale.Key;
 import qx.locale.LocalizedString;
 import qx.locale.Manager;
+import qx.locale.MTranslation;
+import qx.locale.Number;
+import qx.locale.String;
 
 
 
@@ -74,11 +78,10 @@ class Main {
         obj.Logging.debug('Test');
 
         obj.Property.set( { a : 5, b : 'xxx' } );
+	
 		
-		
-
         obj.dispose();
-        var str:String = qx.util.Base64.encode('abcde');
+        var str:std.String = qx.util.Base64.encode('abcde');
 		
 		qx.core.Init.getApplication();
 		
