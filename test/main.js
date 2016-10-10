@@ -30,6 +30,7 @@ qx_Main.main = function() {
 	var str = qx.util.Base64.encode("abcde");
 	qx.core.Init.getApplication();
 	null._createRootWidget();
+	new qx.data.store.Jsonp().reload();
 	console.log(str);
 };
 qx_Main.main();

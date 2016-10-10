@@ -17,7 +17,32 @@ import haxe.extern.Rest;
  */
 @:native("qx.core.Object")
 extern class Object
-{   
+{
+
+	/** Get assert interface of this object. */
+	public var Assert(get, never): qx.core.MAssert;
+	inline function get_Assert(): qx.core.MAssert { return cast(this); }
+
+    /** Get binding interface of this object. */
+	public var Binding(get, never): qx.data.MBinding;
+	inline function get_Binding(): qx.data.MBinding { return cast(this); }	
+	
+	/** Get binding interface of this object. */
+	public var BindTo(get, never): qx.core.MBindTo;
+	inline function get_BindTo(): qx.core.MBindTo { return cast(this); }
+	
+	/** Get event interface of this object. */
+	public var Event(get, never): qx.core.MEvent;
+	inline function get_Event(): qx.core.MEvent { return cast(this); }
+	
+	/** Get logging interface of this object. */
+	public var Logging(get, never): qx.core.MLogging;
+	inline function get_Logging(): qx.core.MLogging { return cast(this); }
+	
+	/** Get property interface of this object. */
+	public var Property(get, never): qx.core.MProperty;
+	inline function get_Property(): qx.core.MProperty { return cast(this); }
+
     /**
      * Create a new instance
      */
@@ -154,36 +179,6 @@ extern class Object
      *
      * @param field {String} Name of the field which refers to the map
      */
-    function _disposeMap(field: std.String): Void;
-	
-	/**
-	 * Get assert interface of this object.
-	 */
-	public var Assert(get, null): MAssert;
-	inline function get_Assert(): MAssert return cast(this);	
-	
-	/**
-	 * Get binding interface of this object.
-	 */
-	public var BindTo(get, null): MBindTo;
-	inline function get_BindTo(): MBindTo return cast(this);
-	
-	/**
-	 * Get event interface of this object.
-	 */
-	public var Event(get, null): MEvent;
-	inline function get_Event(): MEvent return cast(this);
-	
-	/**
-	 * Get logging interface of this object.
-	 */
-	public var Logging(get, null): MLogging;
-	inline function get_Logging(): MLogging return cast(this);
-	
-	/**
-	 * Get property interface of this object.
-	 */
-	public var Property(get, null): MProperty;
-	inline function get_Property(): MProperty return cast(this);	
+    function _disposeMap(field: std.String): Void;	
 
 }

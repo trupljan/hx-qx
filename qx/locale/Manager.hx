@@ -26,25 +26,10 @@ extends qx.core.Object
 	
 	/** current locale. locale is an language code like de, de_AT, en, en_GB, fr, ... */
 	public var locale(get, set): std.String;
-	
-	/** Getter for haxe property. */
-	inline function get_locale(): std.String {
-		return untyped this.getLocale();
-	}
-	
-	/** Setter for haxe property. */
-	inline function set_locale(value: std.String): std.String {
-		setLocale(value, get_locale());
-		return value;
-	}
-	
-	/** Init locale property. */
-	function initLocale(): std.String;
-	
-	/** Get locale property */
+	inline function get_locale(): std.String { return untyped this.getLocale(); }
+	inline function set_locale(value: std.String): std.String { setLocale(value, get_locale()); return value; }
+	function resetLocale(): std.String;
 	function getLocale(): std.String;
-	
-	/** Set locale property */
 	function setLocale(value: std.String, old: std.String): Void;
 	
 	

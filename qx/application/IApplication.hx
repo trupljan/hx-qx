@@ -21,6 +21,7 @@ extern interface IApplication
      */
     function finalize(): Void;
 
+
     /**
      * Called in the document.beforeunload event of the browser. If the method
      * returns a string value, the user will be asked by the browser, whether

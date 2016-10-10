@@ -35,7 +35,7 @@ import haxe.extern.Rest;
  * </pre>
  */
 
- @:native("qx.core.MBindTo")
+@:native("qx.core.MBindTo")
 extern interface MBindTo 
 {
     /**

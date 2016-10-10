@@ -100,6 +100,8 @@ class Main {
 		var app:qx.application.Standalone = null;
 		var aux = app._createRootApplication();
 
+        var store = new qx.data.store.Jsonp();
+        store.reload();
         
         trace(str);
     }

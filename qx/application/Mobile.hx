@@ -13,6 +13,7 @@ implements qx.application.IApplication
 {
 	/** Construct. */
 	public function new();
+
 	
 	/**
      * Returns the application's root widget.
@@ -20,6 +21,7 @@ implements qx.application.IApplication
      * @return {qx.ui.mobile.core.Widget} The application's root widget.
      */
     function getRoot(): qx.ui.mobile.core.Widget;
+
 	
 	/**
      * Returns the application's routing.
@@ -27,6 +29,7 @@ implements qx.application.IApplication
      * @return {qx.application.Routing} The application's routing.
      */
     function getRouting(): qx.application.Routing;
+
 	
 	/**
      * Creates the application's root widget. Override this function to create
@@ -50,6 +53,7 @@ implements qx.application.IApplication
      *
      */
     function finalize(): Void;
+
 
     /**
      * Called in the document.beforeunload event of the browser. If the method

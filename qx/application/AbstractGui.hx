@@ -11,6 +11,10 @@ extern class AbstractGui
 extends qx.core.Object
 implements IApplication
 {
+
+    /** Get tranlsation mixin interface */
+    var Tranlsation(default, never): qx.locale.MTranslation;
+    inline function get_Translation(): qx.locale.MTranslation { return cast(this); }
 	
 	/**
      * Create the root widget. This method is abstract and must be overridden

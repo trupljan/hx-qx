@@ -91,8 +91,8 @@ extern class SingleValueBinding
      *   there is no property definition for object and property (source and
      *   target).
      */
-	static function bind(sourceObject: qx.core.Object, sourcePropertyChain: String,
-	                     targetObject: qx.core.Object, targetPropertyChain: String,
+	static function bind(sourceObject: qx.core.Object, sourcePropertyChain: std.String,
+	                     targetObject: qx.core.Object, targetPropertyChain: std.String,
 						 ?options: Dynamic): Dynamic;
 
 	
