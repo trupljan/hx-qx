@@ -25,27 +25,27 @@ extends qx.core.Object
 	
 	
 	/** current locale. locale is an language code like de, de_AT, en, en_GB, fr, ... */
-	public var locale(get, set): String;
+	public var locale(get, set): std.String;
 	
 	/** Getter for haxe property. */
-	inline function get_locale(): String {
+	inline function get_locale(): std.String {
 		return untyped this.getLocale();
 	}
 	
 	/** Setter for haxe property. */
-	inline function set_locale(value: String): String {
+	inline function set_locale(value: std.String): std.String {
 		setLocale(value, get_locale());
 		return value;
 	}
 	
 	/** Init locale property. */
-	function initLocale(): String;
+	function initLocale(): std.String;
 	
 	/** Get locale property */
-	function getLocale(): String;
+	function getLocale(): std.String;
 	
 	/** Set locale property */
-	function setLocale(value: String, old: String): Void;
+	function setLocale(value: std.String, old: std.String): Void;
 	
 	
 	/**
@@ -55,7 +55,7 @@ extends qx.core.Object
      *
      * @return {String} language code
      */
-    function getLanguage(): String;
+    function getLanguage(): std.String;
 
 
     /**
@@ -65,7 +65,7 @@ extends qx.core.Object
      *
      * @return {String} territory code
      */
-    function getTerritory(): String;
+    function getTerritory(): std.String;
 
 
     /**
@@ -80,11 +80,11 @@ extends qx.core.Object
      * @param includeNonloaded {Boolean?null} include locales not yet loaded
      * @return {String[]} array of available locales
      */
-    function getAvailableLocales(?includeNonloaded: Bool): Array<String>;
+    function getAvailableLocales(?includeNonloaded: Bool): Array<std.String>;
 	
 
 	/** property apply */
-    function _applyLocale(value: String, old: String): Void;
+    function _applyLocale(value: std.String, old: std.String): Void;
 
 
     /**
@@ -99,7 +99,7 @@ extends qx.core.Object
      *                             language, e.g. <i>{"greeting_short" : "Hello"}</i>. Plural forms
      *                             are separate keys.
      */
-    function addTranslation(languageCode: String, translationMap: Dynamic): Void;
+    function addTranslation(languageCode: std.String, translationMap: Dynamic): Void;
 
 
     /**
@@ -112,7 +112,7 @@ extends qx.core.Object
      * @param localeMap {Map} mapping of locale keys to the target locale values, e.g.
      *                        <i>{"cldr_date_format_short" : "M/d/yy"}</i>.
      */
-    function addLocale(localeCode: String, localeMap: Dynamic): Void;
+    function addLocale(localeCode: std.String, localeMap: Dynamic): Void;
 
 
     /**
@@ -128,7 +128,7 @@ extends qx.core.Object
      * @param locale {String ? #locale} locale to be used; if not given, defaults to the value of {@link #locale}
      * @return {String | LocalizedString} translated message or localized string
      */
-    function translate(messageId:String, args: Array<Dynamic>, ?locale: String): EitherType<String, qx.locale.LocalizedString>;
+    function translate(messageId: std.String, args: Array<Dynamic>, ?locale: std.String): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -144,7 +144,7 @@ extends qx.core.Object
      * @param locale {String ? #locale} locale to be used; if not given, defaults to the value of {@link #locale}
      * @return {String | LocalizedString} translated message or localized string
      */
-    function localize(messageId:String, args: Array<Dynamic>, ?locale: String): EitherType<String, qx.locale.LocalizedString>;
+    function localize(messageId: std.String, args: Array<Dynamic>, ?locale: std.String): EitherType<std.String, qx.locale.LocalizedString>;
 
 	
     /**
@@ -156,7 +156,7 @@ extends qx.core.Object
      * @return {String | LocalizedString} The translated message or localized string
 	 * @see qx.lang.String.format
      */
-    static function tr(messageId: String, varargs: Rest<Dynamic>): EitherType<String, qx.locale.LocalizedString>;
+    static function tr(messageId: std.String, varargs: Rest<Dynamic>): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -172,7 +172,7 @@ extends qx.core.Object
      * @return {String | LocalizedString} The translated message or localized string
      * @see qx.lang.String.format
 	 */
-    static function trn(singularMessageId: String, pluralMessageId: String, count: Int, varargs: Rest<Dynamic>): EitherType<String, qx.locale.LocalizedString>;
+    static function trn(singularMessageId: std.String, pluralMessageId: std.String, count: Int, varargs: Rest<Dynamic>): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -185,7 +185,7 @@ extends qx.core.Object
      * @return {String | LocalizedString} The translated message or localized string
      * @see qx.lang.String.format
 	 */
-    static function trc(hint: String, messageId: String, varargs: Rest<Dynamic>): EitherType<String, qx.locale.LocalizedString>;
+    static function trc(hint: std.String, messageId: std.String, varargs: Rest<Dynamic>): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -202,7 +202,7 @@ extends qx.core.Object
      * @return {String | LocalizedString} The translated message or localized string
      * @see qx.lang.String.format
 	 */
-    static function trnc(hint: String, singularMessageId: String, pluralMessageId: String, count: Int, varargs: Rest<Dynamic>): EitherType<String, qx.locale.LocalizedString>;
+    static function trnc(hint: std.String, singularMessageId: std.String, pluralMessageId: std.String, count: Int, varargs: Rest<Dynamic>): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -211,7 +211,7 @@ extends qx.core.Object
      * @param messageId {String} the message ID
      * @return {String} messageId
      */
-    static function marktr(messageId: String): String;
+    static function marktr(messageId: std.String): std.String;
 	
 	
 }

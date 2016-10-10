@@ -14,7 +14,7 @@ extern class Base64 {
      *
      * @return {String} The decoded input string.
      */
-    static function decode(input: String, ?is8Bit: Bool): String;
+    static function decode(input: std.String, ?is8Bit: Bool): std.String;
 
 	
    /**
@@ -28,6 +28,6 @@ extern class Base64 {
      *
      * @return {String} The base64 encoded input string.
      */
-    static function encode(input: String, ?is8bit: Bool): String;
+    static function encode(input: std.String, ?is8bit: Bool): std.String;
 	
 }

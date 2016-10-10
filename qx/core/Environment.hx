@@ -39,7 +39,7 @@ extern class Environment
      * @return {var} The stored value depending on the given key.
      *   (Details in the class doc)
      */
-    static function get(key: String): Dynamic;
+    static function get(key: std.String): Dynamic;
 	
 	
 	/**
@@ -49,7 +49,7 @@ extern class Environment
      * @return {Array} [className, methodName] of
      *  the corresponding implementation.
      */
-	static function _getClassNameFromEnvKey(key: String): Array<String>;
+	static function _getClassNameFromEnvKey(key: std.String): std.Array<std.String>;
 	
 	
 	/**
@@ -62,7 +62,7 @@ extern class Environment
      *   check.
      * @param self {var} The context to use when invoking the callback.
      */
-    static function getAsync(key: String, callback: haxe.Constraints.Function, self: Dynamic): Void;
+    static function getAsync(key: std.String, callback: haxe.Constraints.Function, self: Dynamic): Void;
 	
 	
 	/**
@@ -74,7 +74,7 @@ extern class Environment
      * @return {var} The value which is stored in the map for the given
      *   check of the key.
      */
-    static function select(key: String, values: Dynamic): Dynamic;
+    static function select(key: std.String, values: Dynamic): Dynamic;
 	
 	
 	/**
@@ -88,7 +88,7 @@ extern class Environment
      * @param self {var} The context which should be used when calling the
      *   method in the values map.
      */
-    static function selectAsync(key: String, values: Dynamic, self: Dynamic): Void;
+    static function selectAsync(key: std.String, values: Dynamic, self: Dynamic): Void;
 	
 	
 	/**
@@ -99,7 +99,7 @@ extern class Environment
      * @param map {Map} A map containing check names as keys and values.
      * @return {Array} An array containing the values.
      */
-    static function filter(map: Dynamic): Array<Dynamic>;
+    static function filter(map: Dynamic): std.Array<Dynamic>;
 	
 	
 	/**
@@ -107,7 +107,7 @@ extern class Environment
      *
      * @param key {String} The key of the check.
      */
-    static function invalidateCacheKey(key: String): Void;
+    static function invalidateCacheKey(key: std.String): Void;
 	
 	
 	/**
@@ -119,7 +119,7 @@ extern class Environment
      *   The function should be responsible for the check and should return the
      *   result of the check.
      */
-    static function add(key: String, check: Dynamic): Void;
+    static function add(key: std.String, check: Dynamic): Void;
 	
 	
 	/**
@@ -131,7 +131,7 @@ extern class Environment
      *   environment setting in an asynchronous way. The method should take two
      *   arguments. First one is the callback and the second one is the context.
      */
-    static function addAsync(key: String, check: haxe.Constraints.Function): Void;
+    static function addAsync(key: std.String, check: haxe.Constraints.Function): Void;
 	
 	
 	/**

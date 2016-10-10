@@ -43,7 +43,7 @@ extern class ObjectRegistry
      * @param obj {Object} the object to get the hashcode for
      * @return {String} unique identifier for the given object
      */
-    static function toHashCode(obj: Dynamic): String;
+    static function toHashCode(obj: Dynamic): std.String;
 	
 	/**
      * Clears the unique identifier on the given object.
@@ -60,7 +60,7 @@ extern class ObjectRegistry
      * @param hash {String} The object's hash code.
      * @return {qx.core.Object} The corresponding object or <code>null</code>.
      */
-    static function fromHashCode(hash: String): qx.core.Object;
+    static function fromHashCode(hash: std.String): qx.core.Object;
 	
 	/**
      * Disposing all registered object and cleaning up registry. This is

@@ -37,7 +37,7 @@ extern class Object
      *
      * @return {String} string representation of the object
      */
-    function toString(): String;
+    function toString(): std.String;
 
 	
     /**
@@ -95,7 +95,7 @@ extern class Object
      * @param key {String} the key
      * @param value {Object} the value of the user data
      */
-    function setUserData(key: String, value: Dynamic): Void;
+    function setUserData(key: std.String, value: Dynamic): Void;
 
 	
      /**
@@ -104,7 +104,7 @@ extern class Object
      * @param key {String} the key
      * @return {Object} the user data
      */
-    function getUserData(key: String): Dynamic;
+    function getUserData(key: std.String): Dynamic;
 
 	
     /**
@@ -127,7 +127,7 @@ extern class Object
      *
      * @param varargs {arguments} Names of fields (which store objects) to dispose
      */
-    function _disposeObjects(varargs: Rest<String>): Void;
+    function _disposeObjects(varargs: Rest<Dynamic>): Void;
 
 
     /**
@@ -136,7 +136,7 @@ extern class Object
      *
      * @param varargs {arguments} Names of fields (which store objects) to dispose
      */
-    function _disposeSingletonObjects(varargs: Rest<String>): Void;
+    function _disposeSingletonObjects(varargs: Rest<Dynamic>): Void;
 
 
     /**
@@ -145,7 +145,7 @@ extern class Object
      *
      * @param field {String} Name of the field which refers to the array
      */
-    function _disposeArray(field: String): Void;
+    function _disposeArray(field: std.String): Void;
 
 
     /**
@@ -154,7 +154,7 @@ extern class Object
      *
      * @param field {String} Name of the field which refers to the map
      */
-    function _disposeMap(field: String): Void;
+    function _disposeMap(field: std.String): Void;
 	
 	/**
 	 * Get assert interface of this object.

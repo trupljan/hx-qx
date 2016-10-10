@@ -13,7 +13,7 @@ extends js.Error
    * @param exc {Error} source exception
    * @param args {Array} arguments
    */
-	public function new(exc: js.Error, args: Array<Dynamic>);
+	public function new(exc: js.Error, args: std.Array<Dynamic>);
 	
 
 	/**
@@ -21,7 +21,7 @@ extends js.Error
      *
      * @return {String} error message
      */
-    function toString(): String;
+    function toString(): std.String;
 	
 	 /**
      * Returns the arguments which are

@@ -159,7 +159,7 @@ extern class BaseArray
      *   converted to a string if necessary. If omitted, the array elements are separated with a comma.
      * @return {String} The stringified values of all elements divided by the given separator.
      */
-    function join(separator: String): String;
+    function join(separator: std.String): std.String;
 
     /**
      * Extracts a section of an array and returns a new array.
@@ -182,7 +182,7 @@ extern class BaseArray
      * @signature function()
      * @return {String} The string representation of the array.
      */
-    function toString(): String;
+    function toString(): std.String;
 
     /**
      * Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.

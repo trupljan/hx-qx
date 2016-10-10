@@ -32,7 +32,7 @@ extern class Aspect
      *
      * @return {Function} wrapped function
      */
-	static function wrap(fullName: String, fcn: haxe.Constraints.Function, type: String): haxe.Constraints.Function;
+	static function wrap(fullName: std.String, fcn: haxe.Constraints.Function, type: std.String): haxe.Constraints.Function;
 	
 	
 	/**
@@ -53,6 +53,6 @@ extern class Aspect
      *     this pattern (using <code>fullName.match(name)</code>) will be
      *     wrapped.
      */
-	static function addAdvice(fcn: haxe.Constraints.Function, ?position: String, ?type: String, name: EitherType<String, js.RegExp>): Void; // TODO: check EReg
+	static function addAdvice(fcn: haxe.Constraints.Function, ?position: std.String, ?type: std.String, name: EitherType<std.String, js.RegExp>): Void; // TODO: check EReg
 	
 }

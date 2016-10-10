@@ -12,7 +12,7 @@ extern class WindowError
    * @param uri {String} URI where error was raised
    * @param lineNumber {Integer} The line number where the error was raised
    */
-	public function new(failMessage: String, uri: String, lineNumber: Int);
+	public function new(failMessage: std.String, uri: std.String, lineNumber: Int);
 	
 	
     /**
@@ -20,7 +20,7 @@ extern class WindowError
      *
      * @return {String} error message
      */
-    function toString(): String;
+    function toString(): std.String;
 
 
     /**
@@ -28,7 +28,7 @@ extern class WindowError
      *
      * @return {String} URI where error was raised
      */
-    function getUri(): String;
+    function getUri(): std.String;
 
 
     /**
@@ -36,6 +36,6 @@ extern class WindowError
      *
      * @return {Integer} The line number where the error was raised
      */
-    function getLineNumber(): String;
+    function getLineNumber(): std.String;
 
 }

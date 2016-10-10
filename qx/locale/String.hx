@@ -15,7 +15,7 @@ extern class String
      * @param locale {String} optional locale to be used
      * @return {String} quotation start sign
      */
-    static function getQuotationStart(?locale: String): String;
+    static function getQuotationStart(?locale: std.String): std.String;
 
 
     /**
@@ -24,7 +24,7 @@ extern class String
      * @param locale {String} optional locale to be used
      * @return {String} quotation end sign
      */
-    static function getQuotationEnd(?locale: String): String;
+    static function getQuotationEnd(?locale: std.String): std.String;
 
 
     /**
@@ -33,7 +33,7 @@ extern class String
      * @param locale {String} optional locale to be used
      * @return {String} alternative quotation start sign
      */
-    static function getAlternateQuotationStart(?locale: String): String;
+    static function getAlternateQuotationStart(?locale: std.String): std.String;
 
 
     /**
@@ -42,5 +42,5 @@ extern class String
      * @param locale {String} optional locale to be used
      * @return {String} alternative quotation end sign
      */
-    static function getAlternateQuotationEnd(?locale: String): String;
+    static function getAlternateQuotationEnd(?locale: std.String): std.String;
 }

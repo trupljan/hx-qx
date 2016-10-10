@@ -14,7 +14,7 @@ extern class Assert
    *    <code>true</code>.
    * @param msg {String} Message to be shown if the assertion fails.
    */
-    function assert(condition: Dynamic, msg: String): Void;
+    function assert(condition: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -23,7 +23,7 @@ extern class Assert
      * @param msg {String} Message to be shown if the assertion fails.
      * @param compact {Boolean} Show less verbose message. Default: false.
      */
-    function fail(msg:String , ?compact: Bool): Void;
+    function fail(msg: std.String , ?compact: Bool): Void;
 
 
     /**
@@ -33,7 +33,7 @@ extern class Assert
      *    <code>true</code>.
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertTrue(value: Bool, msg: String): Void;
+    function assertTrue(value: Bool, msg: std.String): Void;
 
 
     /**
@@ -43,7 +43,7 @@ extern class Assert
      *    <code>false</code>.
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertFalse(value: Bool, msg: String): Void;
+    function assertFalse(value: Bool, msg: std.String): Void;
 
 
     /**
@@ -54,7 +54,7 @@ extern class Assert
      * @param found {var} found value
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertEquals(expected: Dynamic, found: Dynamic, msg: String): Void;
+    function assertEquals(expected: Dynamic, found: Dynamic, msg: std.String): Void;
 
     /**
      * Assert that both values are not equal. (Uses the not equality operator
@@ -64,7 +64,7 @@ extern class Assert
      * @param found {var} found value
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertNotEquals(expected: Dynamic, found: Dynamic, msg: String): Void;
+    function assertNotEquals(expected: Dynamic, found: Dynamic, msg: std.String): Void;
 
     /**
      * Assert that both values are identical. (Uses the identity operator
@@ -74,7 +74,7 @@ extern class Assert
      * @param found {var} found value
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertIdentical(expected: Dynamic, found: Dynamic, msg: String): Void;
+    function assertIdentical(expected: Dynamic, found: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -85,7 +85,7 @@ extern class Assert
      * @param found {var} found value
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertNotIdentical(expected: Dynamic, found: Dynamic, msg: String): Void;
+    function assertNotIdentical(expected: Dynamic, found: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -94,7 +94,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertNotUndefined(value: Dynamic, msg: String): Void;
+    function assertNotUndefined(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -103,7 +103,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertUndefined(value: Dynamic, msg:  String): Void;
+    function assertUndefined(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -112,7 +112,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertNotNull(value: Dynamic, msg: String): Void;
+    function assertNotNull(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -121,7 +121,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertNull(value: Dynamic, msg: String): Void;
+    function assertNull(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -132,7 +132,7 @@ extern class Assert
      * @param found {var} The found value
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertJsonEquals(expected: Dynamic, found: Dynamic, msg: String): Void;
+    function assertJsonEquals(expected: Dynamic, found: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -142,7 +142,7 @@ extern class Assert
      * @param re {RegExp} Regular expression to match
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertMatch(str: String, re: Dynamic, msg: String): Void; // TODO: re -> regexp
+    function assertMatch(str: std.String, re: Dynamic, msg: std.String): Void; // TODO: re -> regexp
 
 
     /**
@@ -153,7 +153,7 @@ extern class Assert
      * @param maxCount {Integer} Maximum number of arguments
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertArgumentsCount(args: Dynamic, minCount: Int, maxCount: Int, msg: String): Void;
+    function assertArgumentsCount(args: Dynamic, minCount: Int, maxCount: Int, msg: std.String): Void;
 
 
     /**
@@ -167,7 +167,7 @@ extern class Assert
      *   listener. The function has one parameter called e which is the event.
      * @param msg {String?""} Message to be shows if the assertion fails.
      */
-    function assertEventFired(obj: Dynamic, event: String, invokeFunc: haxe.Constraints.Function, ?listener: haxe.Constraints.Function, ?msg: String): Void;
+    function assertEventFired(obj: Dynamic, event: std.String, invokeFunc: haxe.Constraints.Function, ?listener: haxe.Constraints.Function, ?msg: std.String): Void;
 
 
     /**
@@ -179,7 +179,7 @@ extern class Assert
      *   should not fire the event.
      * @param msg {String} Message to be shows if the assertion fails.
      */
-    function assertEventNotFired(obj: Dynamic, event: String, invokeFunc: haxe.Constraints.Function, msg: String): Void;
+    function assertEventNotFired(obj: Dynamic, event: String, invokeFunc: haxe.Constraints.Function, msg: std.String): Void;
 
 
     /**
@@ -203,7 +203,7 @@ extern class Assert
      * @param array {Array} List of valid values
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertInArray(value: Dynamic, array: Array<Dynamic>, msg: String): Void;
+    function assertInArray(value: Dynamic, array: std.Array<Dynamic>, msg: std.String): Void;
 
 
     /**
@@ -213,7 +213,7 @@ extern class Assert
      * @param found {Array} The found array
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertArrayEquals(expected: Array<Dynamic>, found: Array<Dynamic>, msg: String): Void;
+    function assertArrayEquals(expected: std.Array<Dynamic>, found: std.Array<Dynamic>, msg: std.String): Void;
 
 
     /**
@@ -223,7 +223,7 @@ extern class Assert
      * @param map {Map} Map, where the keys represent the valid values
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertKeyInMap(value: Dynamic, map: Dynamic, msg: String): Void; // TODO: fix map
+    function assertKeyInMap(value: Dynamic, map: Dynamic, msg: std.String): Void; // TODO: fix map
 
 
     /**
@@ -232,7 +232,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertFunction(value: Dynamic, msg: String): Void;
+    function assertFunction(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -241,7 +241,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertString(value: Dynamic, msg: String): Void;
+    function assertString(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -250,7 +250,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertBoolean(value: Dynamic, msg: String): Void;
+    function assertBoolean(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -259,7 +259,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertNumber(value: Dynamic, msg: String): Void;
+    function assertNumber(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -268,7 +268,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertPositiveNumber(value: Dynamic, msg: String): Void;
+    function assertPositiveNumber(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -277,7 +277,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertInteger(value: Dynamic, msg: String): Void;
+    function assertInteger(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -286,7 +286,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertPositiveInteger(value: Dynamic, msg: String): Void;
+    function assertPositiveInteger(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -297,7 +297,7 @@ extern class Assert
      * @param max {Number} upper bound
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertInRange(value: Dynamic, min: Float, max: Float, msg: String): Void; // TODO: either
+    function assertInRange(value: Dynamic, min: Float, max: Float, msg: std.String): Void; // TODO: either
 
 
     /**
@@ -306,7 +306,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertObject(value: Dynamic, msg: String): Void;
+    function assertObject(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -315,7 +315,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertArray(value: Dynamic, msg: String): Void;
+    function assertArray(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -325,7 +325,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertMap(value: Dynamic, msg: String): Void;
+    function assertMap(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -334,7 +334,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertRegExp(value: Dynamic, msg: String): Void;
+    function assertRegExp(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -347,7 +347,7 @@ extern class Assert
      * @param type {String} expected type of the value
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertType(value: Dynamic, type: String, msg: String): Void;
+    function assertType(value: Dynamic, type: String, msg: std.String): Void;
 
 
     /**
@@ -357,7 +357,7 @@ extern class Assert
      * @param clazz {Class} The value must be an instance of this class
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertInstance(value: Dynamic, clazz: Dynamic, msg: String): Void; // TODO: clazz
+    function assertInstance(value: Dynamic, clazz: Dynamic, msg: std.String): Void; // TODO: clazz
 
 
     /**
@@ -367,7 +367,7 @@ extern class Assert
      * @param iface {Class} The value must implement this interface
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertInterface(value: Dynamic, iface: Dynamic, msg: String): Void; // TODO: iface
+    function assertInterface(value: Dynamic, iface: Dynamic, msg: std.String): Void; // TODO: iface
 
 
     /**
@@ -379,7 +379,7 @@ extern class Assert
      *  @param value {String} The value to check
      *  @param msg {String} Message to be shown if the assertion fails.
      */
-   function assertCssColor(expected: String, value: String, msg: String): Void;
+   function assertCssColor(expected: String, value: String, msg: std.String): Void;
 
 
     /**
@@ -388,7 +388,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertElement(value: Dynamic, msg: String): Void;
+    function assertElement(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -397,7 +397,7 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertQxObject(value: Dynamic, msg: String): Void;
+    function assertQxObject(value: Dynamic, msg: std.String): Void;
 
 
     /**
@@ -406,5 +406,5 @@ extern class Assert
      * @param value {var} Value to check
      * @param msg {String} Message to be shown if the assertion fails.
      */
-    function assertQxWidget(value: Dynamic, msg: String): Void;
+    function assertQxWidget(value: Dynamic, msg: std.String): Void;
 }

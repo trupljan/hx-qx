@@ -112,8 +112,8 @@ extern class SingleValueBinding
      *
      * @internal
      */
-    static function updateTarget(sourceObject: qx.core.Object, sourcePropertyChain: String,
-	                     targetObject: qx.core.Object, targetPropertyChain: String,
+    static function updateTarget(sourceObject: qx.core.Object, sourcePropertyChain: std.String,
+	                     targetObject: qx.core.Object, targetPropertyChain: std.String,
 						 ?options: Dynamic): Void;
 						 
 						 
@@ -125,7 +125,7 @@ extern class SingleValueBinding
      *   the source property.
      * @return {var?undefined} Returns the set value if defined.
      */
-    static function resolvePropertyChain(o: qx.core.Object, propertyChain: String): Null<Dynamic>;
+    static function resolvePropertyChain(o: qx.core.Object, propertyChain: std.String): Null<Dynamic>;
 	
 	
 	/**

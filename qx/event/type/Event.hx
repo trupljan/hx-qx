@@ -89,14 +89,14 @@ extends qx.core.Object
      *
      * @return {String} name of the event
      */
-    function getType(): String;
+    function getType(): std.String;
 
 	/**
      * Override the event type
      *
      * @param type {String} new event type
      */
-    function setType(type: String): Void;
+    function setType(type: std.String): Void;
 	
 	/**
      * Used to indicate which phase of event flow is currently being evaluated.

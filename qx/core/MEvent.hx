@@ -27,7 +27,7 @@ extern interface MEvent {
      * @return {String} An opaque id, which can be used to remove the event listener
      *         using the {@link #removeListenerById} method.
      */
-    function addListener(type: String, listener: haxe.Constraints.Function, ?self: Dynamic, ?capture: Bool): Null<String>;
+    function addListener(type: std.String, listener: haxe.Constraints.Function, ?self: Dynamic, ?capture: Bool): Null<std.String>;
 
 	
     /**
@@ -43,7 +43,7 @@ extern interface MEvent {
      * @return {String} An opaque id, which can be used to remove the event listener
      *         using the {@link #removeListenerById} method.
      */
-    function addListenerOnce(type: String, listener: haxe.Constraints.Function, ?self: Dynamic, ?capture: Bool): String;
+    function addListenerOnce(type: std.String, listener: haxe.Constraints.Function, ?self: Dynamic, ?capture: Bool): std.String;
 
 	
     /**
@@ -56,7 +56,7 @@ extern interface MEvent {
      *   the bubbling or of the capturing phase.
      * @return {Boolean} Whether the event was removed successfully (has existed)
      */
-    function removeListener(type: String, listener: haxe.Constraints.Function, ?self: Dynamic, ?capture: Bool): Bool;
+    function removeListener(type: std.String, listener: haxe.Constraints.Function, ?self: Dynamic, ?capture: Bool): Bool;
 
     
     /**
@@ -66,7 +66,7 @@ extern interface MEvent {
      * @param id {String} The id returned by {@link #addListener}
      * @return {Boolean} Whether the event was removed successfully (has existed)
      */
-    function removeListenerById(id: String): Bool;
+    function removeListenerById(id: std.String): Bool;
 
 	
     /**
@@ -77,7 +77,7 @@ extern interface MEvent {
      *         the bubbling or of the capturing phase.
      * @return {Boolean} Whether the object has a listener of the given type.
      */
-    function hasListener(type: String, ?capture: Bool): Bool;
+    function hasListener(type: std.String, ?capture: Bool): Bool;
 
 
     /**
@@ -100,7 +100,7 @@ extern interface MEvent {
      * @return {Boolean} Whether the event default was prevented or not.
      *     Returns true, when the event was NOT prevented.
      */
-    function fireEvent(type: String, ?clazz: qx.event.type.Event, args: Array<Dynamic>): Bool;
+    function fireEvent(type: std.String, ?clazz: qx.event.type.Event, args: std.Array<Dynamic>): Bool;
 
 
     /**
@@ -115,7 +115,7 @@ extern interface MEvent {
      * @return {Boolean} Whether the event default was prevented or not.
      *     Returns true, when the event was NOT prevented.
      */
-    function fireNonBubblingEvent(type: String, ?clazz: qx.event.type.Event, ?args: Array<Dynamic>): Bool;
+    function fireNonBubblingEvent(type: std.String, ?clazz: qx.event.type.Event, ?args: std.Array<Dynamic>): Bool;
 
 
     /**
@@ -133,6 +133,6 @@ extern interface MEvent {
      * @return {Boolean} Whether the event default was prevented or not.
      *     Returns true, when the event was NOT prevented.
      */
-    function fireDataEvent(type: String, data: Dynamic, ?oldData: Dynamic, ?cancelable: Bool): Bool;    
+    function fireDataEvent(type: std.String, data: Dynamic, ?oldData: Dynamic, ?cancelable: Bool): Bool;    
 	
 }

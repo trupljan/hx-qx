@@ -22,7 +22,7 @@ extern interface MProperty {
      * @throws {Error} if a property defined does not exist
      */
     @:overload( function(data: Dynamic): Dynamic {} )
-    function set(data:String, value: Dynamic): Dynamic;
+    function set(data: std.String, value: Dynamic): Dynamic;
 
 
     /**
@@ -33,7 +33,7 @@ extern interface MProperty {
      * @return {var} The value of the value
      * @throws {Error} if a property defined does not exist
      */
-    function get(prop: String): Dynamic;
+    function get(prop: std.String): Dynamic;
 
     /**
      * Resets the value of the given property. If no generated resetter could be
@@ -42,6 +42,6 @@ extern interface MProperty {
      * @param prop {String} Name of the property.
      * @throws {Error} if a property defined does not exist
      */
-    function reset(prop: String): Void;
+    function reset(prop: std.String): Void;
 
 }

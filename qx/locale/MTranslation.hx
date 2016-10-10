@@ -19,7 +19,7 @@ extern interface MTranslation
      * @param varargs {Object} variable number of arguments applied to the format string
      * @return {String | LocalizedString} The translated message or localized string
      */
-    function tr(messageId: String, varargs: Rest<Dynamic>): EitherType<String, qx.locale.LocalizedString>;
+    function tr(messageId: std.String, varargs: Rest<Dynamic>): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -34,7 +34,7 @@ extern interface MTranslation
      * @param varargs {Object} variable number of arguments applied to the format string
      * @return {String | LocalizedString} The translated message or localized string
      */
-    function trn(singularMessageId: String, pluralMessageId: String, count: Int, varargs: Rest<Dynamic>): EitherType<String, qx.locale.LocalizedString>;
+    function trn(singularMessageId: std.String, pluralMessageId: std.String, count: Int, varargs: Rest<Dynamic>): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -46,7 +46,7 @@ extern interface MTranslation
      * @param varargs {Object} variable number of arguments applied to the format string
      * @return {String | LocalizedString} The translated message or localized string
      */
-    function trc(hint: String, messageId: String, varargs: Rest<Dynamic>): EitherType<String, qx.locale.LocalizedString>;
+    function trc(hint: std.String, messageId: std.String, varargs: Rest<Dynamic>): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -62,7 +62,7 @@ extern interface MTranslation
      * @param varargs {Object} variable number of arguments applied to the format string
      * @return {String | LocalizedString} The translated message or localized string
      */
-    function trnc(hint: String, singularMessageId: String, pluralMessageId: String, count: Int, varargs: Rest<Dynamic>): EitherType<String, qx.locale.LocalizedString>;
+    function trnc(hint: std.String, singularMessageId: std.String, pluralMessageId: std.String, count: Int, varargs: Rest<Dynamic>): EitherType<std.String, qx.locale.LocalizedString>;
 
 
     /**
@@ -71,6 +71,6 @@ extern interface MTranslation
      * @param messageId {String} the message ID
      * @return {String} messageId
      */
-    function marktr(messageId: String): String;
+    function marktr(messageId: std.String): std.String;
   
 }

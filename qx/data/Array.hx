@@ -66,7 +66,7 @@ implements qx.data.IListData
      *
      * @return {String} The array as a string.
      */
-    function join(connector: String): String;
+    function join(connector: std.String): std.String;
 
 
     /**
@@ -216,7 +216,7 @@ implements qx.data.IListData
      * Returns the toString of the original Array
      * @return {String} The array as a string.
      */
-    override function toString(): String;
+    override function toString(): std.String;
 
 
     /*

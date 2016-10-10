@@ -22,7 +22,7 @@ extern class Property
      * @param name {String} Name of property
      * @param config {Map} Configuration map of property
      */
-    static function attachMethods(clazz: Dynamic, name: String, config: Dynamic): Void;
+    static function attachMethods(clazz: Dynamic, name: std.String, config: Dynamic): Void;
 	
 	/**
      * Generates the optimized getter
@@ -34,7 +34,7 @@ extern class Property
      * @param variant {String} Method variant.
      * @return {var} Execute return value of apply generated function, generally the incoming value
      */
-    static function executeOptimizedGetter(instance: Dynamic, clazz: Dynamic, name: String, variant: String): Dynamic;
+    static function executeOptimizedGetter(instance: Dynamic, clazz: Dynamic, name: std.String, variant: std.String): Dynamic;
 	
 	/**
      * Generates the optimized setter
@@ -47,7 +47,7 @@ extern class Property
      * @param args {arguments} Incoming arguments of wrapper method
      * @return {var} Execute return value of apply generated function, generally the incoming value
      */
-    static function executeOptimizedSetter(instance: Dynamic, clazz: Dynamic, name: String, variant: String, args: Dynamic): Dynamic;
+    static function executeOptimizedSetter(instance: Dynamic, clazz: Dynamic, name: std.String, variant: std.String, args: Dynamic): Dynamic;
 	
 	
 }

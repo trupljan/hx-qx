@@ -15,7 +15,7 @@ extern class Number
      * @param locale {String} optional locale to be used
      * @return {String} decimal separator.
      */
-    static function getDecimalSeparator(?locale: String): String;
+    static function getDecimalSeparator(?locale: std.String): std.String;
 
 
     /**
@@ -24,7 +24,7 @@ extern class Number
      * @param locale {String} optional locale to be used
      * @return {String} group separator.
      */
-    static function getGroupSeparator(?locale: String): String;
+    static function getGroupSeparator(?locale: std.String): std.String;
 
 
     /**
@@ -33,6 +33,6 @@ extern class Number
      * @param locale {String} optional locale to be used
      * @return {String} percent format string.
      */
-    static function getPercentFormat(?locale: String): String;
+    static function getPercentFormat(?locale: std.String): std.String;
 	
 }
