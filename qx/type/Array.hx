@@ -34,7 +34,7 @@ extern class Array extends BaseArray
      * @return {Array} Cloned array instance
      * @signature function()
      */
-    function clone(): qx.type.Array;
+    function clone(): qx.type.BaseArray;
 
 
     /**
@@ -91,7 +91,7 @@ extern class Array extends BaseArray
      * @return {Array} The modified array.
      * @throws {Error} if one of the arguments is not an array
      */
-    function append(arr: Array): qx.type.Array;
+    function append(arr: qx.type.BaseArray): qx.type.Array;
 
 
     /**
@@ -101,7 +101,7 @@ extern class Array extends BaseArray
      * @return {Array} The modified array.
      * @throws {Error} if one of the arguments is not an array
      */
-    function prepend(arr: Array): qx.type.Array;
+    function prepend(arr: qx.type.BaseArray): qx.type.Array;
 
 
     /**

@@ -23,6 +23,11 @@ import qx.type.BaseString;
 
 import qx.event.type.Event;
 
+import qx.application.IApplication;
+import qx.application.AbstractGui;
+
+import qx.ui.core.Widget;
+
 import qx.util.Base64;
 
 class TestClass extends qx.core.Object {
