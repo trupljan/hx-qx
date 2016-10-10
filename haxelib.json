@@ -1,0 +1,10 @@
+{
+  "name": "hx-qx",
+  "url": "http://github.com/andyli/jQueryExternForHaxe",
+  "license": "MIT",
+  "tags": ["js","extern"],
+  "description": "Haxe externs for Qooxdoo framework",
+  "version": "0.0.1",
+  "releasenote": "under construction",
+  "contributors": ["trupljan"]
+}
