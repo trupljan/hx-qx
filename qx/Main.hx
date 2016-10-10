@@ -23,7 +23,7 @@ import qx.core.Wrapper;
 
 import qx.event.type.Event;
 
-import qx.type.QxArray;
+import qx.type.Array;
 import qx.type.BaseArray;
 import qx.type.BaseError;
 import qx.type.BaseString;
@@ -56,6 +56,7 @@ import qx.locale.String;
 
 import qx.data.IListData;
 import qx.data.Array;
+import qx.data.SingleValueBinding;
 
 
 
