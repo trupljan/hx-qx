@@ -54,6 +54,9 @@ import qx.locale.MTranslation;
 import qx.locale.Number;
 import qx.locale.String;
 
+import qx.data.IListData;
+import qx.data.Array;
+
 
 
 import qx.util.Base64;
