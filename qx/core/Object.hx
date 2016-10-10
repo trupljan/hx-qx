@@ -81,10 +81,12 @@ extern class Object
      * Returns a clone of this object. Copies over all user configured
      * property values. Do not configure a parent nor apply the appearance
      * styles directly.
+	 * 
+	 * @param p1 {var} first parametr (eg. embrio in derived class qx.event.type.Event)
      *
      * @return {qx.core.Object} The clone
      */
-    function clone(): qx.core.Object;
+    function clone(?p1: Dynamic): qx.core.Object;
 
 	
      /**
