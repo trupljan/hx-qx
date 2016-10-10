@@ -44,20 +44,20 @@ extends qx.core.Object
     function setModel(value: Dynamic): Dynamic;
 
     /// state
-    var state(get, set): String;
-    inline function get_state(): String { return getState(); }
-    inline function set_state(value: String): String { setState(value); return value; }
+    var state(get, set): std.String;
+    inline function get_state(): std.String { return getState(); }
+    inline function set_state(value: std.String): std.String { setState(value); return value; }
     function resetState(): Void;
-    function getState(): String;
-    function setState(value: String): Void;
+    function getState(): std.String;
+    function setState(value: std.String): Void;
 
     /// url
-    var url(get, set): String;
-    inline function get_url(): String { return getUrl(); }
-    inline function set_url(value: String): String { setUrl(value); return value; }
+    var url(get, set): std.String;
+    inline function get_url(): std.String { return getUrl(); }
+    inline function set_url(value: std.String): std.String { setUrl(value); return value; }
     function resetUrl(): Void;
-    function getUrl(): String;
-    function setUrl(value: String): Void;
+    function getUrl(): std.String;
+    function setUrl(value: std.String): Void;
 
 
     // marshaleler
