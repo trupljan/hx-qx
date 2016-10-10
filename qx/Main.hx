@@ -102,6 +102,11 @@ class Main {
 
         var store = new qx.data.store.Jsonp();
         store.reload();
+
+        store.Event.addListener(store.event_loaded.name, function(ev) { trace('test');});
+
+        var wrapper = new qx.core.Wrapper();
+        wrapper.push({a: 5});
         
         trace(str);
     }

@@ -27,10 +27,6 @@ extern class Object
 	public var Binding(get, never): qx.data.MBinding;
 	inline function get_Binding(): qx.data.MBinding { return cast(this); }	
 	
-	/** Get binding interface of this object. */
-	public var BindTo(get, never): qx.core.MBindTo;
-	inline function get_BindTo(): qx.core.MBindTo { return cast(this); }
-	
 	/** Get event interface of this object. */
 	public var Event(get, never): qx.core.MEvent;
 	inline function get_Event(): qx.core.MEvent { return cast(this); }
@@ -42,6 +38,12 @@ extern class Object
 	/** Get property interface of this object. */
 	public var Property(get, never): qx.core.MProperty;
 	inline function get_Property(): qx.core.MProperty { return cast(this); }
+
+
+    /** Get binding interface of this object. */
+	public var BindTo(get, never): Null<qx.core.MBindTo>;
+	inline function get_BindTo(): Null<qx.core.MBindTo> { return cast(this); }
+
 
     /**
      * Create a new instance

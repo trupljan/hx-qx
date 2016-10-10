@@ -6,6 +6,7 @@ package qx.core;
  */
 @:native("qx.core.Wrapper")
 extern class Wrapper
+extends std.Array<Dynamic>
 {
 
 	/** Construct. */

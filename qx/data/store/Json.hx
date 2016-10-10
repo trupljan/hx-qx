@@ -16,24 +16,20 @@ extends qx.core.Object
    */
     public function new(url: Null<std.String>, ?delegate: Dynamic);
 
-    // document available events
-    var Events(get, never): Dynamic;
-    inline function get_events(): Dynamic {
-        return {
-            /**
-            * Data event fired after the model has been created. The data will be the
-            * created model.
-            */
-            "loaded" : "qx.event.type.Data",
-
-            /**
-            * Fired when an error (aborted, timeout or failed) occurred
-            * during the load. The data contains the respons of the request.
-            * If you want more details, use the {@link #changeState} event.
-            */
-            "error" : "qx.event.type.Data"
-        }
-    }
+    /**
+     * Data event fired after the model has been created. The data will be the
+     * created model.
+     */
+    public var event_loaded(get, never): qx.event.type.SInfo;
+    inline function get_event_loaded(): qx.event.type.SInfo { return { name: "loaded", type: "qx.event.type.Data" } }; 
+    
+    /**
+     * Fired when an error (aborted, timeout or failed) occurred
+     * during the load. The data contains the respons of the request.
+     * If you want more details, use the {@link #changeState} event.
+     */
+    public var event_error(get, never): qx.event.type.SInfo;
+    inline function get_event_error(): qx.event.type.SInfo { return { name: "error", type: "qx.event.type.Data" } };
 
     /// model
     var model(get, set): Dynamic;
@@ -124,6 +120,7 @@ extends qx.core.Object
      * @param ev {qx.event.type.Event} The request’s success event.
      */
     function _onSuccess(ev: qx.event.type.Event): Void;
+    
 
     /**
      * Reloads the data with the url set in the {@link #url} property.
