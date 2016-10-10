@@ -15,6 +15,27 @@ extends qx.core.Object
 implements qx.data.IListData
 {
 
+    /**
+     * The change event which will be fired if there is a change in the array.
+     * The data contains a map with five key value pairs:
+     * <li>start: The start index of the change.</li>
+     * <li>end: The end index of the change.</li>
+     * <li>type: The type of the change as a String. This can be 'add',
+     * 'remove', 'order' or 'add/remove'</li>
+     * <li>added: The items which has been added (as a JavaScript array)</li>
+     * <li>removed: The items which has been removed (as a JavaScript array)</li>
+     */
+  public var event_change(get, never): qx.event.type.SInfo;
+  inline function get_event_change(): qx.event.type.SInfo { return { name: "change", type: "qx.event.type.Data" } }; 
+
+
+    /**
+     * The changeLength event will be fired every time the length of the
+     * array changes.
+     */
+  public var event_changeLength(get, never): qx.event.type.SInfo;
+  inline function get_event_changeLength(): qx.event.type.SInfo { return { name: "changeLength", type: "qx.event.type.Data" } }; 
+
  /**
    * Creates a new instance of an array.
    *

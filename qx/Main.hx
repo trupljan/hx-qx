@@ -67,7 +67,6 @@ import qx.data.store.Offline;
 import qx.data.store.Rest;
 import qx.data.store.Yql;
 
-
 import qx.util.Base64;
 
 class TestClass extends qx.core.Object {
@@ -111,3 +110,10 @@ class Main {
         trace(str);
     }
 }
+
+/*
+
+public var event_(get, never): qx.event.type.SInfo;
+inline function get_event_(): qx.event.type.SInfo { return { name: "", type: "qx.event.type." } };
+
+*/
