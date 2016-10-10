@@ -17,6 +17,9 @@ import qx.core.MLogging;
 import qx.core.MProperty;
 import qx.core.Object;
 import qx.core.ObjectRegistry;
+import qx.core.Property;
+import qx.core.WindowError;
+import qx.core.Wrapper;
 
 import qx.event.type.Event;
 
