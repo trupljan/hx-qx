@@ -46,6 +46,10 @@ import qx.ui.mobile.core.Widget;
 import qx.ui.root.Application;
 import qx.ui.root.Page;
 
+import qx.locale.MTranslation;
+import qx.locale.LocalizedString;
+import qx.locale.Manager;
+
 
 
 import qx.util.Base64;
