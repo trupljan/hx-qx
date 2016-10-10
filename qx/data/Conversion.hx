@@ -2,7 +2,7 @@ package qx.data;
 import haxe.extern.EitherType;
 import haxe.extern.Rest;
 
-@:native("qx.data.Array")
+@:native("qx.data.Conversion")
 extern class Conversion
 {
    /**

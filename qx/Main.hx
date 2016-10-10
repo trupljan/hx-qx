@@ -60,6 +60,7 @@ import qx.data.Conversion;
 import qx.data.SingleValueBinding;
 import qx.data.MBinding;
 
+import qx.data.store.IStoreDelegate;
 
 
 import qx.util.Base64;
