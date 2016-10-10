@@ -23,10 +23,23 @@ import qx.type.BaseString;
 
 import qx.event.type.Event;
 
+import qx.application.Routing;
 import qx.application.IApplication;
 import qx.application.AbstractGui;
+import qx.application.Basic;
+import qx.application.Inline;
+import qx.application.Mobile;
+import qx.application.Native;
+import qx.application.Standalone;
 
 import qx.ui.core.Widget;
+
+import qx.ui.mobile.core.Widget;
+
+import qx.ui.root.Application;
+import qx.ui.root.Page;
+
+
 
 import qx.util.Base64;
 
@@ -57,6 +70,9 @@ class Main {
         var str:String = qx.util.Base64.encode('abcde');
 		
 		qx.core.Init.getApplication();
+		
+		var app:qx.application.Standalone = null;
+		var aux = app._createRootApplication();
 
         
         trace(str);

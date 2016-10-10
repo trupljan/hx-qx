@@ -1,12 +1,9 @@
 package qx.ui.root;
 
 @:native("qx.ui.root.Application")
-class Application
+extern class Application
 {
 
-	public function new() 
-	{
-		
-	}
+	public function new();
 	
 }

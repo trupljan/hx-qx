@@ -15,8 +15,9 @@ package qx.application;
 extern class Standalone
 extends AbstractGui
 {
-
+	
 	/** Create root widget */
-	function _createRootWidget(): qx.ui.root.Application;
+	@:native("_createRootWidget")
+	function _createRootApplication(): qx.ui.root.Application;
 	
 }
