@@ -17,6 +17,6 @@ extern class Key
      * @param locale {String} optional locale to be used
      * @return {String} localized key name
      */
-	 static function getKeyName(size: String, keyIdentifier: String, ?locale: String): String;
+	 static function getKeyName(size: std.String, keyIdentifier: std.String, ?locale: std.String): std.String;
 	
 }

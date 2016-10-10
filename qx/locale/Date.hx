@@ -15,7 +15,7 @@ extern class Date
      * @param locale {String} optional locale to be used
      * @return {String} translated AM marker.
      */
-    static function getAmMarker(locale: String): String;
+    static function getAmMarker(locale: std.String): std.String;
 
 
     /**
@@ -24,7 +24,7 @@ extern class Date
      * @param locale {String} optional locale to be used
      * @return {String} translated PM marker.
      */
-    static function getPmMarker(locale: String): String;
+    static function getPmMarker(locale: std.String): std.String;
 
 
     /**
@@ -39,7 +39,7 @@ extern class Date
      * in order to find a localized name for the day
      * @return {String[]} array of localized day names starting with sunday.
      */
-    static function getDayNames(length: String, locale: String, ?context: String, ?withFallback: Bool): Array<String>;
+    static function getDayNames(length: std.String, locale: std.String, ?context: std.String, ?withFallback: Bool): Array<std.String>;
 
 
     /**
@@ -55,7 +55,7 @@ extern class Date
      * in order to find a localized name for the day
      * @return {String} localized day name
      */
-    static function getDayName(length: String, day: Int, ?locale: String, ?context: String, ?withFallback: Bool): String;
+    static function getDayName(length: std.String, day: Int, ?locale: std.String, ?context: std.String, ?withFallback: Bool): std.String;
 
 
     /**
@@ -70,7 +70,7 @@ extern class Date
      * in order to find a localized name for the month
      * @return {String[]} array of localized month names starting with january.
      */
-    static function getMonthNames(length: String, ?locale: String, ?context: String, ?withFallback: Bool): Array<String>;
+    static function getMonthNames(length: std.String, ?locale: std.String, ?context: std.String, ?withFallback: Bool): Array<std.String>;
 
 
     /**
@@ -86,7 +86,7 @@ extern class Date
      * in order to find a localized name for the month
      * @return {String} localized month name
      */
-    static function getMonthName(length: String, month: Int, ?locale: String, ?context: String, ?withFallback: Bool): String;
+    static function getMonthName(length: std.String, month: Int, ?locale: std.String, ?context: std.String, ?withFallback: Bool): std.String;
 
     /**
      * Return localized date format string to be used with {@link qx.util.format.DateFormat}.
@@ -96,7 +96,7 @@ extern class Date
      * @param locale {String?} optional locale to be used
      * @return {String} localized date format string
      */
-    static function getDateFormat(size: String, ?locale: String): String;
+    static function getDateFormat(size: std.String, ?locale: std.String): std.String;
 
 
     /**
@@ -112,7 +112,7 @@ extern class Date
      * @param locale {String} optional locale to be used
      * @return {String} best matching format string
      */
-    static function getDateTimeFormat(canonical: String, fallback: String, locale: String): String;
+    static function getDateTimeFormat(canonical: std.String, fallback: std.String, locale: std.String): std.String;
 
 
     /**
@@ -123,7 +123,7 @@ extern class Date
      * @param locale {String} optional locale to be used
      * @return {String} localized time format string
      */
-    static function getTimeFormat(size: String, ?locale: String): String;
+    static function getTimeFormat(size: std.String, ?locale: std.String): std.String;
 
 
     /**
@@ -134,7 +134,7 @@ extern class Date
      * @param locale {String} optional locale to be used
      * @return {Integer} index of the first day of the week. 0=sunday, 1=monday, ...
      */
-    static function getWeekStart(?locale: String): Int;
+    static function getWeekStart(?locale: std.String): Int;
 	
 	/**
      * Return the day the weekend starts with
@@ -144,7 +144,7 @@ extern class Date
      * @param locale {String} optional locale to be used
      * @return {Integer} index of the first day of the weekend. 0=sunday, 1=monday, ...
      */
-    static function getWeekendStart(?locale: String): Int;
+    static function getWeekendStart(?locale: std.String): Int;
 	
 	    /**
      * Return the day the weekend ends with
@@ -154,7 +154,7 @@ extern class Date
      * @param locale {String} optional locale to be used
      * @return {Integer} index of the last day of the weekend. 0=sunday, 1=monday, ...
      */
-    static function getWeekendEnd(?locale: String): Int;
+    static function getWeekendEnd(?locale: std.String): Int;
 	
 	
 	   /**
@@ -164,7 +164,7 @@ extern class Date
      * @param locale {String} optional locale to be used
      * @return {Boolean} whether the given day is a weekend day
      */
-    static function isWeekend(day: Int, ?locale: String): Bool;
+    static function isWeekend(day: Int, ?locale: std.String): Bool;
 	
 	    /**
      * Extract the territory part from a locale
@@ -172,6 +172,6 @@ extern class Date
      * @param locale {String} the locale
      * @return {String} territory
      */
-    static function _getTerritory(locale: String): String;
+    static function _getTerritory(locale: std.String): std.String;
 	
 }

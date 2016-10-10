@@ -53,6 +53,6 @@ extern class Aspect
      *     this pattern (using <code>fullName.match(name)</code>) will be
      *     wrapped.
      */
-	static function addAdvice(fcn: haxe.Constraints.Function, ?position: String, ?type: String, name: EitherType<String, EReg>): Void; // TODO: check EReg
+	static function addAdvice(fcn: haxe.Constraints.Function, ?position: String, ?type: String, name: EitherType<String, js.RegExp>): Void; // TODO: check EReg
 	
 }
