@@ -1,4 +1,5 @@
 package qx.core;
+import qx.event.type.Event;
 
 /**
  * This mixin offers basic event handling capabilities. It includes the
